@@ -1,0 +1,2 @@
+C:\Users\Requi\source\repos\ClarevineEpochSite\ClarevineEpochSite\obj\Any CPU\Debug\ClarevineEpochSite.pyproj.SuggestedBindingRedirects.cache
+C:\Users\Requi\source\repos\ClarevineEpochSite\ClarevineEpochSite\obj\Any CPU\Debug\ClarevineEpochSite.pyproj.CoreCompileInputs.cache
