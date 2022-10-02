@@ -34,6 +34,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ClarevineEpochSite\" />
+    <Folder Include="ClarevineEpochSite\templates\Examples\" />
     <Folder Include="ClarevineEpochSite\static\" />
     <Folder Include="ClarevineEpochSite\static\content\" />
     <Folder Include="ClarevineEpochSite\static\fonts\" />
@@ -41,6 +42,8 @@
     <Folder Include="ClarevineEpochSite\templates\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ClarevineEpochSite\templates\layout.html" />
+    <Content Include="ClarevineEpochSite\templates\index.html" />
     <Content Include="requirements.txt" />
     <Content Include="ClarevineEpochSite\static\content\bootstrap.css" />
     <Content Include="ClarevineEpochSite\static\content\bootstrap.min.css" />
@@ -64,10 +67,10 @@
     <Content Include="ClarevineEpochSite\static\scripts\respond.js" />
     <Content Include="ClarevineEpochSite\static\scripts\respond.min.js" />
     <Content Include="ClarevineEpochSite\static\scripts\_references.js" />
-    <Content Include="ClarevineEpochSite\templates\about.html" />
-    <Content Include="ClarevineEpochSite\templates\contact.html" />
-    <Content Include="ClarevineEpochSite\templates\index.html" />
-    <Content Include="ClarevineEpochSite\templates\layout.html" />
+    <Content Include="ClarevineEpochSite\templates\Examples\aboutExample.html" />
+    <Content Include="ClarevineEpochSite\templates\Examples\contactExample.html" />
+    <Content Include="ClarevineEpochSite\templates\Examples\indexExample.html" />
+    <Content Include="ClarevineEpochSite\templates\Examples\layoutExample.html" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">
