@@ -1,0 +1,17 @@
+body
+{
+}
+
+/*Custom classes.*/
+.luminosity-background {
+    /*Creates a version of the background image with a purple hue and saturation.*/
+    background: linear-gradient(#291D2999,#291D2999), url(../images/M_complete.jpg), linear-gradient(#291D29,#291D29);
+    background-blend-mode: luminosity;
+    
+    /*
+        Ensures that the background image maintains aspect ratio 
+        no matter the size and never goes higher than its resolution.
+    */
+    background-size: cover;
+    background-attachment: fixed;
+}
