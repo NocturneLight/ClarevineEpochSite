@@ -2,9 +2,44 @@ body
 {
 }
 
-/*Custom classes.*/
+img {
+
+}
+
+small {
+    color: white;
+    white-space: nowrap;
+    font-family: Lora;
+    font-weight: 500;
+    font-style: italic;
+    
+    /*
+        https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/
+        
+        Minimum font size: 18px = 1rem
+        Maximum font size: 24px = 1.3333rem
+        
+        Minimum viewport width: 280px = 15.5556rem
+        Max viewport width: 1368px = 76rem
+
+        slope = (maxFontSize - minFontSize) / (maxWidth - minWidth) = 0.00551415846629298992131611861479
+        yAxisIntersection = -minWidth * slope + minFontSize = 0.91422395656173276597997498527577
+
+        So clamp is the following: clamp(minFontSize, yAxisIntersection[rem] + (slope * 100)[vw], maxFontSize)
+    */
+    font-size: clamp(1rem, 0.91422395656173276597997498527577rem + 0.551415846629298992131611861479vw, 1.3333rem);
+    
+    position:fixed;
+    bottom: 0.5%;
+
+    /* These two lines of code properly center the element. */
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+/* Custom classes. */
 .luminosity-background {
-    /*Creates a version of the background image with a purple hue and saturation.*/
+    /* Creates a version of the background image with a purple hue and saturation. */
     background: linear-gradient(#291D2999,#291D2999), url(../images/M_complete.jpg), linear-gradient(#291D29,#291D29);
     background-blend-mode: luminosity;
     
@@ -14,4 +49,47 @@ body
     */
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
+}
+
+.grid-wrapper {
+    display: grid;
+}
+
+.column {
+    border: 5px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* typical phone screen resolution */
+@media only screen and (max-width : 667px) {
+    .luminosity-background {
+        background: linear-gradient(#291D2999,#291D2999), url('../images/M_complete Rotated.jpg'), linear-gradient(#291D29,#291D29);
+        
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+}
+/* landscape orientation */
+@media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : landscape) {
+    /*Do stuff here to fix iPhone landscape scenario.*/
+    .luminosity-background {
+        background: linear-gradient(#291D2999,#291D2999), url(../images/M_complete.jpg), linear-gradient(#291D29,#291D29);
+        
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+}
+/* portrait orientation */
+@media only screen and (min-width : 375px) and (max-width : 920px) and (orientation : portrait) {
+    .luminosity-background {
+        background: linear-gradient(#291D2999,#291D2999), url('../images/M_complete Rotated.jpg'), linear-gradient(#291D29,#291D29);
+        
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
 }
