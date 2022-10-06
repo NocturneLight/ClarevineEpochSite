@@ -5,14 +5,30 @@
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Unsound Minds: The Clarevine Epoch; Windows and Linux</title>
     <link rel="stylesheet" href="../static/content/styles.css" />
+    <link rel="stylesheet" href="../static/content/bootstrap.css" />
 </head>
 <body class="luminosity-background" alt="Two women hugging. One jealous ghost looks at the two girls.">
-    <div class="grid-wrapper">
-        <div class="column">1 piece of text.</div>
-        <div class="column">2 piece of text.</div>
-        <small class="column">© 2022 Reminiscent 64.</small>
+    <!-- The element containing the social media icons and copyright information. -->
+    <div class="container fixed-bottom">
+        <div class="row justify-content-center align-items-center">
+            <div class="w-auto text-center">
+                <a href="https://twitter.com/64thReminiscent">
+                    <img href="" class="img-fluid" style="max-width: 30px" src="../static/images/2021 Twitter logo - white.png" alt="Icon that links to Twitter." />
+                </a>
+            </div>
+            
+            <div class="w-auto text-center">
+                <a href="https://reminiscent-64.itch.io/">
+                    <img class="img-fluid" style="max-width: 30px" src="../static/images/itchio-logo-textless-white.png" alt="Icon that links to Itch.io site." />
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <small class="p-1 text-center">© 2022 Reminiscent 64.</small>
+        </div>
     </div>
-    
+
     {% block content %}{% endblock %}
 </body>
 </html>

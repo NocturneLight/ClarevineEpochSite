@@ -28,13 +28,6 @@ small {
         So clamp is the following: clamp(minFontSize, yAxisIntersection[rem] + (slope * 100)[vw], maxFontSize)
     */
     font-size: clamp(1rem, 0.91422395656173276597997498527577rem + 0.551415846629298992131611861479vw, 1.3333rem);
-    
-    position:fixed;
-    bottom: 0.5%;
-
-    /* These two lines of code properly center the element. */
-    left: 50%;
-    transform: translate(-50%, 0);
 }
 
 /* Custom classes. */
@@ -50,16 +43,6 @@ small {
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-}
-
-.grid-wrapper {
-    display: grid;
-}
-
-.column {
-    border: 5px;
-    text-align: center;
-    padding: 10px;
 }
 
 /* typical phone screen resolution */
