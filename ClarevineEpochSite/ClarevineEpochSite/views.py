@@ -6,7 +6,6 @@ from datetime import datetime
 from flask import render_template
 from ClarevineEpochSite import app
 
-
 @app.route("/")
 @app.route("/home")
 def home():
