@@ -28,12 +28,16 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ClarevineEpochSite\backend\utilities.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="runserver.py" />
     <Compile Include="ClarevineEpochSite\__init__.py" />
     <Compile Include="ClarevineEpochSite\views.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ClarevineEpochSite\" />
+    <Folder Include="ClarevineEpochSite\backend\" />
     <Folder Include="ClarevineEpochSite\static\images\" />
     <Folder Include="ClarevineEpochSite\templates\Examples\" />
     <Folder Include="ClarevineEpochSite\static\" />
