@@ -88,8 +88,10 @@
     <Content Include="ClarevineEpochSite\static\scripts\bootstrap.esm.min.js.map" />
     <Content Include="ClarevineEpochSite\static\scripts\bootstrap.js.map" />
     <Content Include="ClarevineEpochSite\static\scripts\bootstrap.min.js.map" />
+    <Content Include="ClarevineEpochSite\templates\gallery.html" />
     <Content Include="ClarevineEpochSite\templates\layout.html" />
     <Content Include="ClarevineEpochSite\templates\index.html" />
+    <Content Include="ClarevineEpochSite\templates\player.html" />
     <Content Include="requirements.txt" />
     <Content Include="ClarevineEpochSite\static\content\bootstrap.css" />
     <Content Include="ClarevineEpochSite\static\content\bootstrap.min.css" />

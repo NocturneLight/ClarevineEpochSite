@@ -6,31 +6,30 @@ img {
 
 }
 
-small {
-    color: white;
-    white-space: nowrap;
+header, footer {
     font-family: Lora;
-    font-weight: 500;
     font-style: italic;
-    
-    /*
-        https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/
-        
-        Minimum font size: 18px = 1rem
-        Maximum font size: 24px = 1.3333rem
-        
-        Minimum viewport width: 280px = 15.5556rem
-        Max viewport width: 1368px = 76rem
+    color: ghostwhite;
+}
 
-        slope = (maxFontSize - minFontSize) / (maxWidth - minWidth) = 0.00551415846629298992131611861479
-        yAxisIntersection = -minWidth * slope + minFontSize = 0.91422395656173276597997498527577
+header {
+    font-weight: bold;
+}
 
-        So clamp is the following: clamp(minFontSize, yAxisIntersection[rem] + (slope * 100)[vw], maxFontSize)
-    */
-    font-size: clamp(1rem, 0.91422395656173276597997498527577rem + 0.551415846629298992131611861479vw, 1.3333rem);
+footer {
+    white-space: nowrap;
+    font-weight: 500;
+}
+
+a {
+
 }
 
 /* Custom classes. */
+.link-light:hover, .link-light:active { /* Overriding the one in the bootstrap file. Figure something else out if it causes problems. */
+    color: #E9A33A !important;
+}
+
 .luminosity-background {
     /* Creates a version of the background image with a purple hue and saturation. */
     background: linear-gradient(#291D2999,#291D2999), url(../images/M_complete.jpg), linear-gradient(#291D29,#291D29);

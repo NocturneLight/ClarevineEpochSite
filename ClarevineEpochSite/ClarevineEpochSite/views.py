@@ -12,6 +12,14 @@ from ClarevineEpochSite import app
 def home():
     return render_template("index.html")
 
+@app.route("/gallery")
+def gallery():
+    return render_template("gallery.html")
+
+@app.route("/player")
+def player():
+    return render_template("player.html")
+
 #@app.route('/')
 #@app.route('/home')
 #def home():
