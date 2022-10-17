@@ -30,6 +30,11 @@ a {
     color: #E9A33A !important;
 }
 
+.header-background {
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 .luminosity-background {
     /* Creates a version of the background image with a purple hue and saturation. */
     background: linear-gradient(#291D2999,#291D2999), url(../images/M_complete.jpg), linear-gradient(#291D29,#291D29);

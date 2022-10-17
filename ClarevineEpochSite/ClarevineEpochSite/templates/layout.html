@@ -20,44 +20,36 @@
 </head>
 
 <body class="luminosity-background" alt="Two women hugging. One jealous ghost looks at the two girls.">
-    <!-- The element containing the menu bar. -->
-    <div class="container-fluid fixed-top">
-        <div class="row flex-nowrap" style="background-color: rgba(0, 0, 0, 0.5)">
-            <header class="col fs-5 text-center">
-                <a class="link-light" href="home">Home</a>
-            </header>
+    <div class="d-flex sticky-top">
+        <a class="col m-1 link-light header-background" href="home">
+            <header class="fs-5 text-center">Home</header>
+        </a>
 
-            <header class="col fs-5 text-center">
-                <a class="link-light" href="gallery">Art Gallery</a>
-            </header>
+        <a class="col m-1 link-light header-background" href="gallery">
+            <header class="fs-5 text-center">Art Gallery</header>
+        </a>
 
-            <header class="col fs-5 text-center">
-                <a class="link-light" href="player">Music Player</a>
-            </header>
-        </div>
-    </div>
-    
-    <!-- The element containing the social media icons and copyright information. -->
-    <div class="container fixed-bottom">
-        <div class="row justify-content-center align-items-center">
-            <div class="w-auto text-center">
-                <a href="https://twitter.com/64thReminiscent">
-                    <img href="" class="img-fluid" style="max-width: 30px" src="../static/images/2021 Twitter logo - white.png" alt="Icon that links to Twitter." />
-                </a>
-            </div>
-            
-            <div class="w-auto text-center">
-                <a href="https://reminiscent-64.itch.io/">
-                    <img class="img-fluid" style="max-width: 30px" src="../static/images/itchio-logo-textless-white.png" alt="Icon that links to Itch.io site." />
-                </a>
-            </div>
-        </div>
-
-        <div class="row">
-            <footer class="p-2 text-center">&copy; 2017-{{now.year}} Reminiscent 64.</footer>
-        </div>
+        <a class="col m-1 link-light header-background" href="player">
+            <header class="fs-5 text-center">Music Player</header>
+        </a>
     </div>
 
-    {% block content %}{% endblock %}
+    <div class="d-flex align-items-center justify-content-center">
+        {% block content %}{% endblock %}
+    </div>
+
+    <div class="d-grid sticky-bottom">
+        <div class="d-flex justify-content-center">
+            <a class="p-2" href="https://twitter.com/64thReminiscent">
+                <img class="img-fluid" style="max-width: 30px" src="../static/images/2021 Twitter logo - white.png" alt="Icon that links to Twitter." />
+            </a>
+
+            <a class="p-2" href="https://reminiscent-64.itch.io/">
+                <img class="img-fluid" style="max-width: 30px" src="../static/images/itchio-logo-textless-white.png" alt="Icon that links to Itch.io site." />
+            </a>
+        </div>
+
+        <footer class="text-center">&copy; 2017-{{now.year}} Reminiscent 64.</footer>
+    </div>
 </body>
 </html>
