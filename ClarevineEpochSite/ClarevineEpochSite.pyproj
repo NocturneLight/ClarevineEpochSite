@@ -82,6 +82,7 @@
     <Content Include="ClarevineEpochSite\static\images\itchio-logo-textless-white.png" />
     <Content Include="ClarevineEpochSite\static\images\M_complete Rotated.jpg" />
     <Content Include="ClarevineEpochSite\static\images\M_complete.jpg" />
+    <Content Include="ClarevineEpochSite\static\scripts\animations.js" />
     <Content Include="ClarevineEpochSite\static\scripts\bootstrap.bundle.js" />
     <Content Include="ClarevineEpochSite\static\scripts\bootstrap.bundle.js.map" />
     <Content Include="ClarevineEpochSite\static\scripts\bootstrap.bundle.min.js" />

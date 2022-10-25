@@ -26,13 +26,19 @@ a {
 }
 
 /* Custom classes. */
-.link-light:hover, .link-light:active { /* Overriding the one in the bootstrap file. Figure something else out if it causes problems. */
-    color: #E9A33A !important;
-}
-
 .header-background {
     border-radius: 3px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.65);
+    transition: background-color 0.5s, color 0.6s;
+}
+
+.header-background:hover {
+    color: #291D29;
+    background-color: rgba(233, 163, 58, 0.8);
+}
+
+.footer-background {
+    background-color: rgba(0, 0, 0, 0.65);
 }
 
 .luminosity-background {
