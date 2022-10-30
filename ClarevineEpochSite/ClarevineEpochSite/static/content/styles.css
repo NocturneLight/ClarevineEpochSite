@@ -28,11 +28,12 @@ a {
 /* Custom classes. */
 .header-background {
     /* https://colorhunt.co/palette/97bfb4f5eedcdd4a484f091d */
-    border-radius: 3px;
     color: #F5EEDC;
-    text-shadow: 1px 1px 1px black, 1px 1px 1px black, 1px 1px 1px black;
+    outline: 1px solid #F5EEDC;
+    text-shadow: 2px 1px 0px black;
+    border-radius: 3px;
     background-color: rgba(79, 9, 29, 0.9);
-    transition: background-color 0.5s, color 0.6s;
+    transition: background-color 0.5s;
 }
 
 .header-background:hover {
@@ -43,6 +44,7 @@ a {
 .footer-background {
     /* https://colorhunt.co/palette/97bfb4f5eedcdd4a484f091d */
     background-color: rgba(79, 9, 29, 0.9);
+    outline: 1px solid #F5EEDC;
 }
 
 .luminosity-background {
