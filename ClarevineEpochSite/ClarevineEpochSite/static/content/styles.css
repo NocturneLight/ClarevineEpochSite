@@ -21,6 +21,16 @@ footer {
     font-weight: 500;
 }
 
+section {
+    background-color: #00000095;
+    margin: 3vh 20vw 3vh 20vw !important;
+
+    font-family: Lora;
+    color: ghostwhite;
+    outline: 2px dotted ghostwhite;
+    border-radius: 10px;
+}
+
 a {
 
 }
@@ -49,7 +59,7 @@ a {
 
 .luminosity-background {
     /* Creates a version of the background image with a purple hue and saturation. */
-    background: linear-gradient(#291D2999,#291D2999), url(../images/M_complete.jpg), linear-gradient(#291D29,#291D29);
+    background: linear-gradient(#291D2999,#291D2999), url(../images/cg/M_complete.jpg), linear-gradient(#291D29,#291D29);
     background-blend-mode: luminosity;
     
     /*
@@ -64,7 +74,7 @@ a {
 /* typical phone screen resolution */
 @media only screen and (max-width : 667px) {
     .luminosity-background {
-        background: linear-gradient(#291D2999,#291D2999), url('../images/M_complete Rotated.jpg'), linear-gradient(#291D29,#291D29);
+        background: linear-gradient(#291D2999,#291D2999), url('../images/cg/M_complete Rotated.jpg'), linear-gradient(#291D29,#291D29);
         
         background-size: cover;
         background-attachment: fixed;
@@ -75,7 +85,7 @@ a {
 @media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : landscape) {
     /*Do stuff here to fix iPhone landscape scenario.*/
     .luminosity-background {
-        background: linear-gradient(#291D2999,#291D2999), url(../images/M_complete.jpg), linear-gradient(#291D29,#291D29);
+        background: linear-gradient(#291D2999,#291D2999), url(../images/cg/M_complete.jpg), linear-gradient(#291D29,#291D29);
         
         background-size: cover;
         background-attachment: fixed;
@@ -85,7 +95,7 @@ a {
 /* portrait orientation */
 @media only screen and (min-width : 375px) and (max-width : 920px) and (orientation : portrait) {
     .luminosity-background {
-        background: linear-gradient(#291D2999,#291D2999), url('../images/M_complete Rotated.jpg'), linear-gradient(#291D29,#291D29);
+        background: linear-gradient(#291D2999,#291D2999), url('../images/cg/M_complete Rotated.jpg'), linear-gradient(#291D29,#291D29);
         
         background-size: cover;
         background-attachment: fixed;

@@ -1,7 +1,135 @@
 {% extends "layout.html" %}
 
+<!-- Gallery source code gotten from: http://blueimp.github.io/Gallery/ -->
 {% block content %}
 
-<h1>Hi from the gallery!</h1>
+<!-- The Gallery as lightbox dialog, should be a document body child element -->
+<div id="blueimp-gallery"
+     class="blueimp-gallery blueimp-gallery-controls"
+     aria-label="image gallery"
+     aria-modal="true"
+     role="dialog">
+    <div class="slides" aria-live="polite"></div>
+    <h3 class="title"></h3>
+    <a class="prev"
+       aria-controls="blueimp-gallery"
+       aria-label="previous slide"
+       aria-keyshortcuts="ArrowLeft"></a>
+    <a class="next"
+       aria-controls="blueimp-gallery"
+       aria-label="next slide"
+       aria-keyshortcuts="ArrowRight"></a>
+    <a class="close"
+       aria-controls="blueimp-gallery"
+       aria-label="close"
+       aria-keyshortcuts="Escape"></a>
+    <a class="play-pause"
+       aria-controls="blueimp-gallery"
+       aria-label="play slideshow"
+       aria-keyshortcuts="Space"
+       aria-pressed="false"
+       role="button"></a>
+    <ol class="indicator"></ol>
+</div>
+
+<!-- The images to display in the gallery. -->
+<div class="d-grid justify-content-center">
+    <!-- CG's to display. -->
+    <section class="text-center h1">CGs</section>
+
+    <div id="links" class="d-flex flex-wrap justify-content-around">
+        <a class="d-inline-block" href="../static/images/cg/a_1.jpg" title="Three Paths">
+            <img src="../static/images/cg/thumbnails/a_1.webp" />
+        </a>
+
+        <a class="d-inline-block" href="../static/images/cg/b.jpg" title="At the Quarry">
+            <img src="../static/images/cg/thumbnails/b.webp" />
+        </a>
+
+        <a class="d-inline-block" href="../static/images/cg/d.jpg" title="Veiled Seduction">
+            <img src="../static/images/cg/thumbnails/d.webp" />
+        </a>
+
+        <a class="d-inline-block" href="../static/images/cg/e_1.jpg" title="Tired">
+            <img src="../static/images/cg/thumbnails/e_1.webp" />
+        </a>
+
+        <a class="d-inline-block" href="../static/images/cg/e_3.jpg" title="Pained & Tired">
+            <img src="../static/images/cg/thumbnails/e_3.webp" />
+        </a>
+
+        <a class="d-inline-block" href="../static/images/cg/f.jpg" title="Treasure From the Trash">
+            <img src="../static/images/cg/thumbnails/f.webp" />
+        </a>
+
+        <a class="d-inline-block" href="../static/images/cg/J_complete.png" title="Making Tacos">
+            <img src="../static/images/cg/thumbnails/J_complete.webp" />
+        </a>
+
+        <a class="d-inline-block" href="../static/images/cg/k.jpg" title="A Haunting in Gettlesteam">
+            <img src="../static/images/cg/thumbnails/k.webp" />
+        </a>
+
+        <a class="d-inline-block" href="../static/images/cg/l.jpg" title="The Final Picnic">
+            <img src="../static/images/cg/thumbnails/l.webp" />
+        </a>
+
+        <a class="d-inline-block" href="../static/images/cg/M_complete.jpg" title="Hug Before the Journey">
+            <img src="../static/images/cg/thumbnails/M_complete.webp" />
+        </a>
+
+        <a class="d-inline-block" href="../static/images/cg/n.jpg" title="A Glimpse of the Future">
+            <img src="../static/images/cg/thumbnails/n.webp" />
+        </a>
+
+        <a class="d-inline-block" href="../static/images/cg/p.jpg" title="Commotion">
+            <img src="../static/images/cg/thumbnails/p.webp" />
+        </a>
+
+        <a class="d-inline-block" href="../static/images/cg/q.jpg" title="Waiting">
+            <img src="../static/images/cg/thumbnails/q.webp" />
+        </a>
+
+        <a class="d-inline-block" href="../static/images/cg/r.jpg" title="Date With Fate">
+            <img src="../static/images/cg/thumbnails/r.webp" />
+        </a>
+
+        <a class="d-inline-block" href="../static/images/cg/T_FULL.PNG" title="Brush With Death">
+            <img src="../static/images/cg/thumbnails/T_FULL.webp" />
+        </a>
+
+        <a class="d-inline-block" href="../static/images/cg/V_4_full.png" title="A Lord's Intervention">
+            <img src="../static/images/cg/thumbnails/V_4_full.webp" />
+        </a>
+
+        <a class="d-inline-block" href="../static/images/cg/V_5_full.png" title="Repulsion From Fate">
+            <img src="../static/images/cg/thumbnails/V_5_full.webp" />
+        </a>
+
+        <a class="d-inline-block" href="../static/images/cg/W_full.png" title="Commit to your True Destiny">
+            <img src="../static/images/cg/thumbnails/W_full.webp" />
+        </a>
+    </div>
+
+    <!-- Backgrounds to display. -->
+    <section class="text-center h1">Backgrounds</section>
+</div>
+
+
+
+<!-- Script for the gallery. -->
+<script src="../static/blueimp-gallery/js/blueimp-gallery.min.js"></script>
+
+<!-- Javascript code for the gallery. -->
+<script>
+    document.getElementById('links').onclick = function (event) {
+        event = event || window.event
+        var target = event.target || event.srcElement
+        var link = target.src ? target.parentNode : target
+        var options = { index: link, event: event }
+        var links = this.getElementsByTagName('a')
+        blueimp.Gallery(links, options)
+    }
+</script>
 
 {% endblock %}
