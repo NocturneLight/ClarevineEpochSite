@@ -8,7 +8,7 @@ Write-Host "`n$path" -NoNewLine -ForegroundColor Red; Write-Host " is the path y
 $folderName = Read-Host -Prompt "`nInsert path, including a folder name, for the folder you want thumbnails to be created in (For example: C:\Users\Requi\source\repos\ClarevineEpochSite\ClarevineEpochSite\ClarevineEpochSite\static\images\cg\thumbnails\)"
 
 Start-Sleep -Seconds 1
-Write-Host "`n$folderName" -NoNewLine -ForegroundColor Red; Write-Host " is where your folders will be created."
+Write-Host "`n$folderName" -NoNewLine -ForegroundColor Red; Write-Host " is where your thumbnails will be created."
 
 Start-Sleep -Seconds 1
 "`nCreating a folder for the thumbnails to be created."
