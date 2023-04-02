@@ -39,6 +39,7 @@
     <Folder Include="ClarevineEpochSite\" />
     <Folder Include="ClarevineEpochSite\backend\" />
     <Folder Include="ClarevineEpochSite\external scripts\" />
+    <Folder Include="ClarevineEpochSite\static\frontend\" />
     <Folder Include="ClarevineEpochSite\static\blueimp-gallery\" />
     <Folder Include="ClarevineEpochSite\static\blueimp-gallery\css\" />
     <Folder Include="ClarevineEpochSite\static\blueimp-gallery\img\" />
@@ -62,6 +63,7 @@
     <Content Include="ClarevineEpochSite\external scripts\batch-compress-images.ps1">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="ClarevineEpochSite\static\frontend\utilities.js" />
     <Content Include="ClarevineEpochSite\static\blueimp-gallery\css\blueimp-gallery-indicator.css" />
     <Content Include="ClarevineEpochSite\static\blueimp-gallery\css\blueimp-gallery-video.css" />
     <Content Include="ClarevineEpochSite\static\blueimp-gallery\css\blueimp-gallery.css" />
@@ -324,6 +326,7 @@
     <Content Include="ClarevineEpochSite\templates\layout.html" />
     <Content Include="ClarevineEpochSite\templates\index.html" />
     <Content Include="ClarevineEpochSite\templates\player.html" />
+    <Content Include="ClarevineEpochSite\templates\start.html" />
     <Content Include="requirements.txt" />
     <Content Include="ClarevineEpochSite\static\content\bootstrap.css" />
     <Content Include="ClarevineEpochSite\static\content\bootstrap.min.css" />

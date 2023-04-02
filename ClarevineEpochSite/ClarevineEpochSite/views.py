@@ -7,6 +7,9 @@ from flask import render_template
 from ClarevineEpochSite import app
 
 @app.route("/")
+def start():
+    return render_template("start.html")
+
 @app.route("/home")
 def home():
     return render_template("index.html")

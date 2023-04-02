@@ -57,6 +57,33 @@ a {
     outline: 1px solid #F5EEDC;
 }
 
+.triangle-cursor {
+    width: 0px;
+    height: 10px;
+    
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid black;
+    border-radius: 10px;
+    animation: fade 2s infinite;
+}
+
+@keyframes fade {
+    0%, 100% { opacity: 0 }
+    50% { opacity: 1 }
+}
+
+.textbox-background {
+    width: 35vw;
+    min-height: 20vh;
+
+    background-color: #CFC1CE99;
+    transform: translateY(-30%);
+    border-radius: 5px;
+    outline: 1px solid black;
+    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.5);
+}
+
 .luminosity-background {
     /* Creates a version of the background image with a purple hue and saturation. */
     background: linear-gradient(#291D2999,#291D2999), url(../images/cg/M_complete.jpg), linear-gradient(#291D29,#291D29);
