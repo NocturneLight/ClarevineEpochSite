@@ -9,4 +9,5 @@ app = Flask(__name__)
 from .backend.utilities import utilities
 app.register_blueprint(utilities)
 
+# Ignore the warning. Removing the line of code breaks the website.
 import ClarevineEpochSite.views
