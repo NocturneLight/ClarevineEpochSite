@@ -31,6 +31,7 @@
     <Compile Include="ClarevineEpochSite\backend\utilities.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="passenger_wsgi.py" />
     <Compile Include="runserver.py" />
     <Compile Include="ClarevineEpochSite\__init__.py" />
     <Compile Include="ClarevineEpochSite\views.py" />
