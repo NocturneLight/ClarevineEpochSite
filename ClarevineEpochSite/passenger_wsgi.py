@@ -1,4 +1,4 @@
-# Make sure this file is always in the same location as the requirements.txt file on the server.
+# NOTE: Make sure this file is always in the same location as the requirements.txt file on the server!
 import os
 import sys
 from flask import Flask
