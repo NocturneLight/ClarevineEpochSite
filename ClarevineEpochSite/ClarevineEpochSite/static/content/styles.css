@@ -1,0 +1,131 @@
+body
+{
+}
+
+img {
+
+}
+
+header, footer {
+    font-family: Lora;
+    font-style: italic;
+    color: ghostwhite;
+}
+
+header {
+    font-weight: bold;
+}
+
+footer {
+    white-space: nowrap;
+    font-weight: 500;
+}
+
+section {
+    background-color: #00000095;
+    margin: 3vh 20vw 3vh 20vw !important;
+
+    font-family: Lora;
+    color: ghostwhite;
+    outline: 2px dotted ghostwhite;
+    border-radius: 10px;
+}
+
+a {
+
+}
+
+/* Custom classes. */
+.header-background {
+    /* https://colorhunt.co/palette/97bfb4f5eedcdd4a484f091d */
+    color: #F5EEDC;
+    outline: 1px solid #F5EEDC;
+    text-shadow: 2px 1px 0px black;
+    border-radius: 3px;
+    background-color: rgba(79, 9, 29, 0.9);
+    transition: background-color 0.5s;
+}
+
+.header-background:hover {
+    /* https://colorhunt.co/palette/97bfb4f5eedcdd4a484f091d */
+    background-color: rgba(221, 74, 72, 0.8);
+}
+
+.footer-background {
+    /* https://colorhunt.co/palette/97bfb4f5eedcdd4a484f091d */
+    background-color: rgba(79, 9, 29, 0.9);
+    outline: 1px solid #F5EEDC;
+}
+
+.triangle-cursor {
+    width: 0px;
+    height: 10px;
+    
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid black;
+    border-radius: 10px;
+    animation: fade 2s infinite;
+}
+
+@keyframes fade {
+    0%, 100% { opacity: 0 }
+    50% { opacity: 1 }
+}
+
+.textbox-background {
+    width: 35vw;
+    min-height: 20vh;
+
+    background-color: #CFC1CE99;
+    transform: translateY(-30%);
+    border-radius: 5px;
+    outline: 1px solid black;
+    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.5);
+}
+
+.luminosity-background {
+    /* Creates a version of the background image with a purple hue and saturation. */
+    background: linear-gradient(#291D2999,#291D2999), url(../images/cg/M_complete.jpg), linear-gradient(#291D29,#291D29);
+    background-blend-mode: luminosity;
+    
+    /*
+        Ensures that the background image maintains aspect ratio 
+        no matter the size and never goes higher than its resolution.
+    */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* typical phone screen resolution */
+@media only screen and (max-width : 667px) {
+    .luminosity-background {
+        background: linear-gradient(#291D2999,#291D2999), url('../images/cg/M_complete Rotated.jpg'), linear-gradient(#291D29,#291D29);
+        
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+}
+/* landscape orientation */
+@media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : landscape) {
+    /*Do stuff here to fix iPhone landscape scenario.*/
+    .luminosity-background {
+        background: linear-gradient(#291D2999,#291D2999), url(../images/cg/M_complete.jpg), linear-gradient(#291D29,#291D29);
+        
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+}
+/* portrait orientation */
+@media only screen and (min-width : 375px) and (max-width : 920px) and (orientation : portrait) {
+    .luminosity-background {
+        background: linear-gradient(#291D2999,#291D2999), url('../images/cg/M_complete Rotated.jpg'), linear-gradient(#291D29,#291D29);
+        
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+}

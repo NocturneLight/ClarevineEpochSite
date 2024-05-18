@@ -1,47 +1,61 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }} - My Flask Application</title>
-    <link rel="stylesheet" type="text/css" href="/static/content/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="/static/content/site.css" />
-    <script src="/static/scripts/modernizr-2.6.2.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S6KQ4BFFHT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-S6KQ4BFFHT');
+    </script>
+
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Homepage and asset display for the Lovecraftian Dark Fantasy visual novel demo The Clarevine Epoch." />
+    <title>Unsound Minds: The Clarevine Epoch; Windows and Linux</title>
+
+    <link rel="stylesheet" href="../static/content/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/content/styles.css" />
+    <link rel="stylesheet" href="../static/blueimp-gallery/css/blueimp-gallery.min.css" />
+    <script type="text/javascript" src="../static/frontend/utilities.js"></script>
 </head>
 
-<body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="/" class="navbar-brand">Application name</a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="{{ url_for('home') }}">Home</a></li>
-                    <li><a href="{{ url_for('about') }}">About</a></li>
-                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
-                </ul>
-            </div>
-        </div>
+<body class="luminosity-background" alt="Two women hugging. One jealous ghost looks at the two girls.">
+    <!-- The header bar. -->
+    <div class="d-flex sticky-top">
+        <a class="col m-1 link-light" href="home">
+            <header class="fs-5 text-center header-background">Home</header>
+        </a>
+
+        <a class="col m-1 link-light" href="gallery">
+            <header class="fs-5 text-center header-background">Art Gallery</header>
+        </a>
+
+        <a class="col m-1 link-light" href="player">
+            <header class="fs-5 text-center header-background">Music Player</header>
+        </a>
     </div>
 
-    <div class="container body-content">
+    <!-- Page content. -->
+    <div class="d-flex align-items-center justify-content-center">
         {% block content %}{% endblock %}
-        <hr />
-        <footer>
-            <p>&copy; {{ year }} - My Flask Application</p>
-        </footer>
     </div>
 
-    <script src="/static/scripts/jquery-1.10.2.js"></script>
-    <script src="/static/scripts/bootstrap.js"></script>
-    <script src="/static/scripts/respond.js"></script>
-    {% block scripts %}{% endblock %}
+    <!-- Social media links and copyright info bar. -->
+    <div class="d-grid sticky-bottom footer-background">
+        <div class="d-flex justify-content-center">
+            <a class="p-2" href="https://twitter.com/64thReminiscent">
+                <img class="img-fluid" style="max-width: 30px" src="../static/images/social-media/2021-Twitter-logo-white.png" alt="Icon that links to Twitter." />
+            </a>
 
+            <a class="p-2" href="https://reminiscent-64.itch.io/">
+                <img class="img-fluid" style="max-width: 30px" src="../static/images/social-media/itchio-logo-textless-white.png" alt="Icon that links to Itch.io site." />
+            </a>
+        </div>
+
+        <footer class="text-center">&copy; 2017-{{now.year}} Reminiscent 64.</footer>
+    </div>
 </body>
 </html>
